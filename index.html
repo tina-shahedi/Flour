@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flour | Artisanal Bakery</title>
+    <meta name="description" content="Handcrafted artisanal cakes and pastries made with locally-sourced ingredients and traditional baking methods." />
+    <meta name="author" content="Flour" />
+
+    <meta property="og:title" content="Flour| Artisanal Bakery" />
+    <meta property="og:description" content="Handcrafted artisanal cakes and pastries made with locally-sourced ingredients and traditional baking methods." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+
+    
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-6 bg-transparent">
+      <div class="container-custom flex items-center justify-between">
+        <!-- Brand logo + name -->
+        <a href="#" class="flex items-center">
+            <img src="./docs/img/logo1_black.png" alt="Flour Logo" class="h-[72px] w-auto" style="height: 72px;" />
+          </a>
+          
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex items-center space-x-8">
+          <li><button class="nav-link hover-link font-medium capitalize transition-colors hover:text-warmBrown" data-target="about">About</button></li>
+          <li><button class="nav-link hover-link font-medium capitalize transition-colors hover:text-warmBrown" data-target="products">Products</button></li>
+          <li><button class="nav-link hover-link font-medium capitalize transition-colors hover:text-warmBrown" data-target="contact">Contact</button></li>
+        </ul>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle md:hidden text-foreground hover:text-warmBrown transition-colors" aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu md:hidden fixed inset-0 w-full h-full z-[9999] bg-cream-50 
+              transform transition-transform duration-300 ease-in-out translate-x-full">
+    <!-- Close Button -->
+    <button id="close-menu" class="absolute top-6 right-6 text-2xl text-warmBrown z-50">
+      ✕
+    </button>
+
+    <div class="container-custom py-20 overflow-y-auto h-full">
+      <ul class="flex flex-col items-center space-y-8">
+        <li><button class="nav-link text-xl font-medium capitalize transition-colors hover:text-warmBrown" data-target="about">About</button></li>
+        <li><button class="nav-link text-xl font-medium capitalize transition-colors hover:text-warmBrown" data-target="products">Products</button></li>
+        <li><button class="nav-link text-xl font-medium capitalize transition-colors hover:text-warmBrown" data-target="contact">Contact</button></li>
+      </ul>
+    </div>
+  </div>
+
+
+    </nav>
+
+   <!-- Hero Section -->
+<section class="relative min-h-screen w-full flex items-center justify-center pt-16">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img
+        src="./docs/Freshly baked cakes and pastries1.jpg"
+        alt="Freshly baked cakes and pastries"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/20"></div>
+    </div>
+  
+    <!-- Hero Content -->
+    <div class="container-custom relative z-10 text-center">
+      <div class="max-w-3xl mx-auto px-6 animate-fade-down">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-semibold mb-6 text-white drop-shadow-sm">
+          Artisanal Baking with Heart
+        </h1>
+        <p class="text-lg md:text-xl text-white/90 mb-8 max-w-xl mx-auto">
+          Handcrafted pastries and cake made with locally-sourced ingredients
+        </p>
+        <button
+          class="explore-button bg-warmBrown hover:bg-warmBrown-dark text-white px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105"
+        >
+          Explore Our Story
+        </button>
+      </div>
+    </div>
+    
+  
+    <!-- Scroll Down Button -->
+    <button
+      class="scroll-down-button absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 text-white/70 hover:text-white animate-bounce transition-colors"
+      aria-label="Scroll down"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+  </section>
+  
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-cream-100">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div class="opacity-0 should-animate h-[500px] rounded-lg overflow-hidden">
+            <img
+            src="./docs/img/image3333.jpg"
+            alt="Freshly baked cakes and pastries"
+            class="w-full h-full object-cover"
+          />
+          </div>
+          
+          <div class="opacity-0 should-animate">
+            <!-- <div class="inline-block mb-4 px-3 py-1 rounded-full bg-warmBrown/10 text-warmBrown font-medium text-sm">
+              Our Story
+            </div> -->
+            <h2 class="text-3xl md:text-4xl font-semibold mb-6">
+             Our Story
+            </h2>
+            <p class="text-muted-foreground mb-6 leading-relaxed">
+                Flour began as a small family cake and pastry bakery with a simple mission: to create delicious, 
+                handcrafted baked cakes and pastries using traditional methods and the finest ingredients.
+            </p>
+            <!-- <p class="text-muted-foreground mb-6 leading-relaxed">
+              Four decades later, we've grown but our philosophy remains unchanged. Every loaf, 
+              pastry, and dessert is made with care, patience, and a dedication to the craft of baking.
+            </p> -->
+            <p class="text-muted-foreground leading-relaxed">
+                We source locally whenever possible, supporting our community and ensuring the freshest flavors 
+                in everything we create. From delicious cakes to delicate pastries, each item reflects our passion for quality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="products" class="section-padding">
+        <div class="container-custom">
+          <div class="text-center max-w-xl mx-auto mb-16 opacity-0 should-animate">
+            <div class="inline-block mb-4 px-3 py-1 rounded-full bg-warmBrown/10 text-warmBrown font-medium text-sm">
+              Our Products
+            </div>
+            <h2 class="text-3xl md:text-4xl font-semibold mb-4">
+              Handcrafted with Love
+            </h2>
+            <p class="text-muted-foreground">
+              Order cakes and pastries for birthdays, weddings, holidays, or personal indulgence. Tap to flip and see details!
+            </p>
+          </div>
+      
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+            <!-- Product: Apple Lattice Pie -->
+            <div class="relative group perspective flip-trigger cursor-pointer">
+                <div class="relative w-full h-80 duration-700 transform-style-preserve-3d card-inner">
+                  <!-- Front Side (Image) -->
+                  <div class="absolute inset-0 backface-hidden">
+                    <img src="./docs/img/image22.jpg" alt="Apple Lattice Pie" class="w-full h-full object-cover rounded-lg" />
+                  </div>
+                  <!-- Back Side (Description) -->
+                  <div class="absolute inset-0 backface-hidden rotate-y-180 bg-white p-6 rounded-lg">
+                    <h3 class="text-xl font-medium mb-2 text-warmBrown">Apple Lattice Pie</h3>
+                    <p class="text-muted-foreground mb-2">Classic apple pie with a handmade lattice crust.</p>
+                    <p class="font-semibold text-lg">€15.00</p>
+                  </div>
+                </div>
+              </div>
+              
+      
+           <!-- Product: Baby Shower Cake -->
+            <div class="relative group perspective flip-trigger cursor-pointer">
+            <div class="relative w-full h-80 duration-700 transform-style-preserve-3d card-inner">
+                <!-- Front Side (Image) -->
+                <div class="absolute inset-0 backface-hidden">
+                    <img src="./docs/img/image11.jpg" alt="Baby Shower Cake" class="w-full h-full object-cover rounded-lg" />
+                </div>
+                <!-- Back Side (Details) -->
+                <div class="absolute inset-0 backface-hidden rotate-y-180 bg-white p-6 rounded-lg">
+                <h3 class="text-xl font-medium mb-2 text-warmBrown">Baby Shower Cake</h3>
+                    <p class="text-muted-foreground mb-2">Decorated with pastel frosting and baby topper.</p>
+                    <p class="font-semibold text-lg">€38.00</p>
+                    </div>
+                    </div>
+                </div>
+  
+      
+            <!-- Product: Chocolate Strawberry Cake -->
+            <div class="relative group perspective flip-trigger cursor-pointer">
+                <div class="relative w-full h-80 duration-700 transform-style-preserve-3d card-inner">
+                <!-- Front Side (Image) -->
+                <div class="absolute inset-0 backface-hidden">
+                    <img src="./docs/img/image9.jpg" alt="Chocolate Strawberry Cake" class="w-full h-full object-cover rounded-lg" />
+                </div>
+                <!-- Back Side (Details) -->
+                <div class="absolute inset-0 backface-hidden rotate-y-180 bg-white p-6 rounded-lg">
+                    <h3 class="text-xl font-medium mb-2 text-warmBrown">Chocolate Strawberry Cake</h3>
+                    <p class="text-muted-foreground mb-2">Rich chocolate frosting with strawberries and Oreos.</p>
+                    <p class="font-semibold text-lg">€39.00</p>
+                </div>
+                </div>
+            </div>
+  
+      
+            <!-- Product: Butterfly Cake -->
+            <div class="relative group perspective flip-trigger cursor-pointer">
+                <div class="relative w-full h-80 duration-700 transform-style-preserve-3d card-inner">
+                <!-- Front Side (Image) -->
+                <div class="absolute inset-0 backface-hidden">
+                    <img src="./docs/img/image33.jpg" alt="Butterfly Cake" class="w-full h-full object-cover rounded-lg" />
+                </div>
+                <!-- Back Side (Details) -->
+                <div class="absolute inset-0 backface-hidden rotate-y-180 bg-white p-6 rounded-lg">
+                    <h3 class="text-xl font-medium mb-2 text-warmBrown">Butterfly Cake</h3>
+                    <p class="text-muted-foreground mb-2">Light cream cake with butterfly decorations.</p>
+                    <p class="font-semibold text-lg">€27.00</p>
+                </div>
+                </div>
+            </div>
+  
+      
+            <!-- Product: Cake Rolls -->
+            <div class="relative group perspective flip-trigger cursor-pointer">
+                <div class="relative w-full h-80 duration-700 transform-style-preserve-3d card-inner">
+                <!-- Front Side (Image) -->
+                <div class="absolute inset-0 backface-hidden">
+                    <img src="./docs/img/image6.jpg" alt="Cake Rolls" class="w-full h-full object-cover rounded-lg" />
+                </div>
+                <!-- Back Side (Details) -->
+                <div class="absolute inset-0 backface-hidden rotate-y-180 bg-white p-6 rounded-lg">
+                    <h3 class="text-xl font-medium mb-2 text-warmBrown">Cake Rolls</h3>
+                    <p class="text-muted-foreground mb-2">Soft sponge rolls filled with vanilla cream.</p>
+                    <p class="font-semibold text-lg">€15.00 (box of 11)</p>
+                </div>
+                </div>
+            </div>
+  
+      
+           <!-- Product: Cherry Cake -->
+            <div class="relative group perspective flip-trigger cursor-pointer">
+                <div class="relative w-full h-80 duration-700 transform-style-preserve-3d card-inner">
+                <!-- Front Side (Image) -->
+                <div class="absolute inset-0 backface-hidden">
+                    <img src="./docs/img/image4.jpg" alt="Cherry Cake" class="w-full h-full object-cover rounded-lg" />
+                </div>
+                <!-- Back Side (Details) -->
+                <div class="absolute inset-0 backface-hidden rotate-y-180 bg-white p-6 rounded-lg">
+                    <h3 class="text-xl font-medium mb-2 text-warmBrown">Cherry Cake</h3>
+                    <p class="text-muted-foreground mb-2">Fluffy cake topped with cherry compote.</p>
+                    <p class="font-semibold text-lg">€24.00</p>
+                </div>
+                </div>
+            </div>
+  
+      
+            <!-- Product: Pink Rose Cake -->
+            <div class="relative group perspective flip-trigger cursor-pointer">
+                <div class="relative w-full h-80 duration-700 transform-style-preserve-3d card-inner">
+                <!-- Front Side (Image) -->
+                <div class="absolute inset-0 backface-hidden">
+                    <img src="./docs/img/image7.jpg" alt="Pink Rose Cake" class="w-full h-full object-cover rounded-lg" />
+                </div>
+                <!-- Back Side (Details) -->
+                <div class="absolute inset-0 backface-hidden rotate-y-180 bg-white p-6 rounded-lg">
+                    <h3 class="text-xl font-medium mb-2 text-warmBrown">Pink Rose Cake (small)</h3>
+                    <p class="text-muted-foreground mb-2">Creamy rose-flavored cake perfect for personal treat.</p>
+                    <p class="font-semibold text-lg">€15.00</p>
+                </div>
+                </div>
+            </div>
+  
+      
+            <!-- Product: Cream Delight Cake -->
+            <div class="relative group perspective flip-trigger cursor-pointer">
+            <div class="relative w-full h-80 duration-700 transform-style-preserve-3d card-inner">
+                <!-- Front Side (Image) -->
+                <div class="absolute inset-0 backface-hidden">
+                <img src="./docs/img/image5.jpg" alt="Cream Delight Cake" class="w-full h-full object-cover rounded-lg" />
+                </div>
+                <!-- Back Side (Details) -->
+                <div class="absolute inset-0 backface-hidden rotate-y-180 bg-white p-6 rounded-lg">
+                <h3 class="text-xl font-medium mb-2 text-warmBrown">Cream Delight Cake</h3>
+                <p class="text-muted-foreground mb-2">Vanilla sponge cake layered with whipped cream frosting and filled with chocolate chips.</p>
+                <p class="font-semibold text-lg">€32.00</p>
+                </div>
+            </div>
+            </div>
+
+      
+          </div>
+        </div>
+      </section>
+      
+      
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-cream-100">
+      <div class="container-custom">
+        <div class="text-center max-w-xl mx-auto mb-16 opacity-0 should-animate">
+          <div class="inline-block mb-4 px-3 py-1 rounded-full bg-warmBrown/10 text-warmBrown font-medium text-sm">
+            Get In Touch
+          </div>
+          <h2 class="text-3xl md:text-4xl font-semibold mb-4">
+            Order from Our Bakery
+          </h2>
+          <p class="text-muted-foreground">
+            Celebrate life’s sweetest moments with custom-made cakes for birthdays, anniversaries, weddings, Christmas, Nowruz, Yalda, Sinterklaas, and more. 
+            <br> Whether it’s a festive gathering or a personal treat, we’re here to bake something unforgettable just for you.
+            <br> Place your order online or by phone and pick it up fresh from our bakery.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Contact Card 1 -->
+          <div class="bg-white p-8 rounded-lg text-center transition-all duration-300 opacity-0 should-animate hover:shadow-md" style="animation-delay: 0ms">
+            <div class="w-12 h-12 bg-warmBrown/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-warmBrown"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="text-xl font-medium mb-4">Pickup Available</h3>
+            <p class="text-muted-foreground">Utrechtseweg Street</p>
+            <p class="text-muted-foreground">Zeist, 3704 HE</p>
+          </div>
+
+          <!-- Contact Card 2 -->
+          <div class="bg-white p-8 rounded-lg text-center transition-all duration-300 opacity-0 should-animate hover:shadow-md" style="animation-delay: 150ms">
+            <div class="w-12 h-12 bg-warmBrown/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock text-warmBrown"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="text-xl font-medium mb-4">Hours</h3>
+            <p class="text-muted-foreground">Mon-Fri: 4pm - 6pm</p>
+            <p class="text-muted-foreground">Sat-Sun: 8am - 4pm</p>
+          </div>
+
+          <!-- Contact Card 3 -->
+          <div class="bg-white p-8 rounded-lg text-center transition-all duration-300 opacity-0 should-animate hover:shadow-md" style="animation-delay: 300ms">
+            <div class="w-12 h-12 bg-warmBrown/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-warmBrown"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3 class="text-xl font-medium mb-4">Contact</h3>
+            <p class="text-muted-foreground">(+31) 687-378500</p>
+            <a href="https://www.instagram.com/banketbakkerij_zeist" target="_blank" class="text-muted-foreground">
+            @banketbakkerij_zeist
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-warmBrown py-12 text-white">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div>
+            <h3 class="font-playfair text-2xl font-semibold mb-4">Flour</h3>
+            <p class="text-white/80 leading-relaxed">
+              Artisanal bakery creating handcrafted cakes and pastries using traditional methods
+              and high-quality ingredients.
+            </p>
+          </div>
+          
+          <div>
+            <h4 class="font-medium text-lg mb-4">Menu</h4>
+            <ul class="space-y-2">
+              <li><a href="#about" class="text-white/80 hover:text-white transition-colors">About</a></li>
+              <li><a href="#products" class="text-white/80 hover:text-white transition-colors">Products</a></li>
+              <li><a href="#contact" class="text-white/80 hover:text-white transition-colors">Contact</a></li>
+              <li><a href="#" class="text-white/80 hover:text-white transition-colors">Home</a></li>
+              <!-- <li><a href="#" class="text-white/80 hover:text-white transition-colors">Privacy Policy</a></li> -->
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="font-medium text-lg mb-4">Newsletter</h4>
+            <p class="text-white/80 mb-4">
+              Subscribe to receive updates, seasonal offerings, and special promotions.
+            </p>
+            <div class="flex">
+              <input 
+                type="email" 
+                placeholder="Your email" 
+                class="bg-white/10 border border-white/20 px-4 py-2 rounded-l-md w-full outline-none focus:bg-white/20 transition-colors"
+              />
+              <button class="bg-white text-warmBrown font-medium px-4 rounded-r-md hover:bg-warmBrown-light hover:text-white transition-colors">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="border-t border-white/20 mt-10 pt-6 text-center text-white/70">
+          <p>© <span id="current-year">2023</span> Flour. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
